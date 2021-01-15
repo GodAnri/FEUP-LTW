@@ -1,0 +1,43 @@
+1. a)
+R1: (0,1,0,1)
+R2: (0,1,1,2)
+R3: (0,1,1,1)
+R4: (0,1,1,2)
+R5: (0,1,0,2)
+R6: (0,0,0,3)
+
+b)
+Buy Bread: cyan
+Learn Guitar: magenta
+Pay Bills: magenta
+Wash Car: magenta
+
+c)
+Buy Bread: cyan
+Learn Guitar: blue
+Pay Bills: red
+Wash Car: red
+
+2. a)
+Washing the [washing machine while watching the washing machine washing washing]
+b)
+Washing the washing m[ac]hine while watching the washing machine washing washing
+c)
+W[ashing the wash]ing machine while watching the washing machine washing washing
+d)
+[Washing the washing machine while watching the washing machine washing washing]
+e)
+Washing the washing machine while watching the washing machine [washing] washing
+f)
+Washing the [washing machine while watching the washing machine washing wa]shing
+
+3. See 3.js
+
+4. a)
+authors/author/book/text()
+b)
+authors/author/book[@year > '1900']/text()
+c)
+authors/author[@country = 'England']/book/@year
+d)
+authors/author/book[@type = 'Novel']/../@name

@@ -1,0 +1,8 @@
+1. Have the same name attribute
+2. article.featured:first-child h2
+3. Obtaining a session cookie that was sent insecurely
+4. It is never possible to reverse
+5. The communication is encrypted
+6. if ($pos === false) echo "Not found";
+7. An object
+8. child
