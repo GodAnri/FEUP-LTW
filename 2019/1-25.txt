@@ -17,10 +17,10 @@
 13. 0, 0, 1, 1
 14. 0, 0, 2, 1
 15. 0, 1, 0, 1
-16. 0, 1, 0, 1 ??
+16. 0, 1, 0, 1
 17. 0, 0, 3, 2
 18. 0, 1, 2, 2
-19. Black ??
+19. Purple
 
 20. A [groundhog would hog all the ground he could hog, if a groundhog could hog g]round
 21. A [groundhog would hog] all the ground he could hog, if a groundhog could hog ground
