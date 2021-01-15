@@ -1,0 +1,6 @@
+1. When it contains secondary content.
+2. Generate and use a different token for each session.
+3. Brute Force.
+4. As an HTTP header.
+5. Is a global variable of the script.
+7. Selects all jobs of people who are descendants from the context node or the context node itself.
