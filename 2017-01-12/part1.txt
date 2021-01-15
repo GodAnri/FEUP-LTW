@@ -1,0 +1,8 @@
+1. The section element.
+2. h1 elements inside a header and any h2 element.
+3. Forcing a user to use a certain session cookie.
+4. No, because some of the advantages of hashing passwords are lost.
+5. Always.
+6. Refers to a global script variable.
+7. The current execution context.
+8. Depends on the used axis.
