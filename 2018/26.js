@@ -8,7 +8,7 @@ function handleClick(event) {
     let itemclass = this.getAttribute('class');
     if (itemclass.match(/used/) === null) {
         itemclass += ' used';
-        input.value += this.innerHTML;
+        input.setAttribute('value', input.getAttribute('value') + this.innerHTML);
     }
 }
 
