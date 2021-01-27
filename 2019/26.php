@@ -1,12 +1,8 @@
 <?php
     include_once('game.php');
-    
-    $id = $_POST['id'];
-    $position = $_POST['position'];
-    
-    if (isset($position)) {
-        play($id, $position);
-    }
 
-    echo json_encode(state($id));
+    if (isset($_POST['position']))
+        play($_POST['id'], $_POST['position']);
+    
+    echo json_encode(state($_POST['id']));
 ?>

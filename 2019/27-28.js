@@ -1,30 +1,26 @@
 // 27
-const divs = document.querySelectorAll('section#tic-tac-toe div.square');
-
-function loaded(event) {
+function onLoadHandler(event) {
     const id = document.querySelector('section#tic-tac-toe').getAttribute('data-id');
 
-    let req = new XMLHttpRequest();
-    req.onload = handleReq;
-    req.open('post','play.php', true);
-    request.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-    request.send(encodeForAjax({'id':id}));
+    const req = new XMLHttpRequest();
+    req.onload = requestHandler;
+    req.open('post','play.php',true);
+    req.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+    req.send(encodeForAjax({'id': id}));
 }
 
-function handleReq() {
+function requestHandler() {
     const response = JSON.parse(this.responseText);
-
-    let i = 0;
-    divs.forEach(function (square) {
-        square.innerHTML = response.squares[i];
-        i++;
-    })
+    document.querySelector('section#tic-tac-toe p#state').innerHTML = response.state;
     
-    let statep = document.querySelector('#tic-tac-toe #state');
-    statep.innerHTML = response.state;
+    let i = 0;
+    document.querySelectorAll('section#tic-tac-toe div.square').forEach(function (elem) {
+        elem.innerHTML = response.squares[i];
+        i++;
+    });
 }
 
-document.onload(loaded);
+document.onload(onLoadHandler);
 
 // 28
 
