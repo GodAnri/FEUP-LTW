@@ -1,36 +1,35 @@
-const send = document.querySelector('section#game input[name="send"]');
-
 let input = document.querySelector('section#game input[type="text"]');
 let itemlist = document.querySelector('section#game ul');
 
-function handleSend(event) {
-    event.preventDefault();
+function send(event) {
+    const guess = document.querySelector('#game input[type="text"]');
 
-    const guess = input.getAttribute('value');
-
-    let req = new XMLHttpRequest();
-    req.open('post', 'is_guess_correct.php', true);
-    req.onload = handleReq;
+    const req = new XMLHttpRequest();
+    req.onload = requestHandler;
+    req.open('post','is_guess_correct.php',true);
     req.setRequestHeader("Content-Type", 'application/x-www-form-urlencoded');
-    req.send(encodeForAjax(guess));
+    req.send(encodeForAjax({'guess':guess}));
 }
 
-function handleReq() {
+
+function requestHandler() {
     const response = JSON.parse(this.responseText);
 
-    if (response["result"] = "wrong") {
-        alert("WRONG");
-    }
-    else {
-        itemlist.children.forEach(function (child) {
-            itemlist.removeChild(child);
-        });
-        response["word"].forEach(function (elem) {
-            let item = document.createElement('li');
-            item.innerHTML = elem;
-            itemlist.children.push(item);
+    if (response.result === "wrong")
+        alert('WRONG');
+    else
+    {
+        document.querySelector('#game input[type="text"]').setAttribute('value','');
+        const list = document.querySelector('#game ul');
+        list.children.forEach(function (elem) {
+            list.removeChild(elem);
+        })
+        response.word.forEach(function (newletter) {
+            const newelem = document.createElement('li');
+            newelem.innerHTML = newletter;
+            list.appendChild(newelem);
         })
     }
 }
 
-send.addEventListener('click', handleSend);
+document.querySelector('#game input[name="send"]').addEventListener('click',send);

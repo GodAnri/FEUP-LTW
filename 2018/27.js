@@ -1,15 +1,9 @@
-const reset = document.querySelector('section#game input[name="reset"]')
-
-let input = document.querySelector('section#game input[type="text"]')
-let items = document.querySelectorAll('section#game ul li');
-
-function handleReset(event) {
-    event.preventDefault();
-
-    items.forEach(function (elem) {
-        elem.classList.remove('used');
+function onReset(event) {
+    document.querySelector('#game input[type="text"]').setAttribute('value','');
+    document.querySelectorAll('#game ul li').forEach(function (elem) {
+        if (elem.classList.contains('used'))
+            elem.classList.remove('used');
     });
-    input.value = '';
 }
 
-reset.addEventListener('click', handleReset);
+document.querySelector('#game input[name="reset"]').addEventListener(onReset);
