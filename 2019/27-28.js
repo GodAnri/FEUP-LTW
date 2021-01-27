@@ -23,18 +23,16 @@ function requestHandler() {
 document.onload(onLoadHandler);
 
 // 28
-
-for(let i = 1; i < 9; i++){
-    divs[i].addEventListener("click", function (event) {
-        event.preventDefault();
-
+let index = 0;
+document.querySelectorAll('section #tic-tac-toe div.square').forEach(function (elem) {
+    elem.addEventListener('click', function () {
         const id = document.querySelector('section#tic-tac-toe').getAttribute('data-id');
 
-        let req = XMLHttpRequest();
-        req.onload = handleReq;
-        request.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-        request.send(encodeForAjax({'id':id, 'position':i}));
+        const req = new XMLHttpRequest();
+        req.onload = requestHandler;
+        req.open('post','play.php',true);
+        req.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+        req.send(encodeForAjax({'id':id, 'position':index}));
     });
-}
-
-divs.forEach(addEventListener('click', handleClick));
+    index++;
+});
