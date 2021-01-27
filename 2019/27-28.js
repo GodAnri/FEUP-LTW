@@ -1,8 +1,8 @@
 // 27
-let divs = document.querySelectorAll('section#tic-tac-toe div.square');
+const divs = document.querySelectorAll('section#tic-tac-toe div.square');
 
 function loaded(event) {
-    let id = document.querySelector('section#tic-tac-toe').getAttribute('data-id');
+    const id = document.querySelector('section#tic-tac-toe').getAttribute('data-id');
 
     let req = new XMLHttpRequest();
     req.onload = handleReq;
@@ -12,7 +12,7 @@ function loaded(event) {
 }
 
 function handleReq() {
-    let response = JSON.parse(this.responseText);
+    const response = JSON.parse(this.responseText);
 
     let i = 0;
     divs.forEach(function (square) {
@@ -32,7 +32,7 @@ for(let i = 1; i < 9; i++){
     divs[i].addEventListener("click", function (event) {
         event.preventDefault();
 
-        let id = document.querySelector('section#tic-tac-toe').getAttribute('data-id');
+        const id = document.querySelector('section#tic-tac-toe').getAttribute('data-id');
 
         let req = XMLHttpRequest();
         req.onload = handleReq;

@@ -1,11 +1,11 @@
 // a)
 
-let images = document.querySelectorAll('div#photos ul li');
+const images = document.querySelectorAll('div#photos ul li');
 
 function changeSrc() {
     let img = document.querySelector('div#photos img.large');
 
-    let src = this.getAttribute('src');
+    const src = this.getAttribute('src');
 
     img.setAttribute('src', 'large/' + src);
 }
@@ -13,7 +13,7 @@ function changeSrc() {
 images.forEach(addEventListener('click', changeSrc));
 
 // b)
-let load = document.querySelector('div#photos a.load');
+const load = document.querySelector('div#photos a.load');
 
 function handleLoad(event) {
     event.preventDefault();

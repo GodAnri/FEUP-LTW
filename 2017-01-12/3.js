@@ -1,25 +1,24 @@
 // a)
 function handleClick() {
-    let qty = parseInt(this.previousSibling.innerHTML);
-    qty++;
+    const qty = parseInt(this.previousSibling.innerHTML) + 1;
     this.previousSibling.innerHTML = qty;    
 }
 
 document.querySelectorAll('div#products ul li a').forEach(addEventListener('click', handleClick));
 
 // b)
-let buy = document.querySelector('div#products a.buy');
+const buy = document.querySelector('div#products a.buy');
 
 function handleBuy(event) {
     event.preventDefault();
 
     let products = [];
-    let items = document.querySelectorAll('div#products ul li');
+    const items = document.querySelectorAll('div#products ul li');
     items.forEach(function (item) {
         products.push({"name":item.innerHTML,"qty":item.children[0].innerHTML});
     })
 
-    let req = new XMLHttpRequest();
+    const req = new XMLHttpRequest();
     req.open('post', 'calculatetotal.php', true);
     req.onload = handleReq;
     req.setRequestHeader("Content-Type", 'application/x-www-form-urlencoded');
@@ -27,7 +26,7 @@ function handleBuy(event) {
 }
 
 function handleReq() {
-    let response = parseInt(JSON.parse(this.responseText));
+    const response = parseInt(JSON.parse(this.responseText));
     
     let total = document.querySelector('div#products p.total')
     if (response < 0)

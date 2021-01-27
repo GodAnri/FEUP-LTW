@@ -1,13 +1,13 @@
-let items = document.querySelectorAll('section#game ul li');
+const items = document.querySelectorAll('section#game ul li');
 
 let input = document.querySelector('section#game input[type="text"]')
 
 function handleClick(event) {
     event.preventDefault();
 
-    let itemclass = this.getAttribute('class');
-    if (itemclass.match(/used/) === null) {
-        itemclass += ' used';
+    if (!div.classList.contains('used'))
+    {
+        this.classList.add('used');
         input.setAttribute('value', input.getAttribute('value') + this.innerHTML);
     }
 }
