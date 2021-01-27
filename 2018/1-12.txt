@@ -1,0 +1,12 @@
+1. De duas formas: attribute ou attribute="attribute".
+2. O id tem de ser único mas cada elemento apenas pode ter um id.
+3. Uma composição de elementos auto-contida num documento.
+4. Primeiro pai não estático (static).
+5. ul li:first-child.
+6. Apenas a largura e altura do conteúdo do elemento.
+7. Se os tipos das variáveis são os mesmos.
+8. Dentro da função, a variável bar refere-se a uma variável global.
+9. foo.addEventListener('click', changeColor.bind(foo,'blue')).
+10. URLs devem identificar recursos e não ações.
+11. Para verificar a autenticidade das chaves públicas dos servidores.
+12. Forçar a que todos os utilizadores tenham palavras-chave diferentes.
