@@ -2,8 +2,9 @@
 2. <label> Username: <input name="username" type="text"></label>
 3. The id must be unique and each element can only have one id.
 4. ul > :first-child
-5.  A B
-    C
+5. A 
+     B
+   C
 6. div {font-size: 2rem}
 7. function existsStudent($number) {
     return calculateGrade($number) !== NULL;
