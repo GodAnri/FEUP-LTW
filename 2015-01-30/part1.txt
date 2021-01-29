@@ -1,0 +1,6 @@
+1. <article><h1 class="header">Título</h1>...</article>
+2. Cross-Site Request Forgery
+3. Use slow hashing functions
+4. if ($pos === false) echo "Not found";
+5. 1234
+7. It means that the result of repeating the same request a certain number of times is the same as sending the request only once.
