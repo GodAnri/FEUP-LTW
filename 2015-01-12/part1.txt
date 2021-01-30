@@ -1,0 +1,6 @@
+1. <article class="important">...</article>
+2. Cross-site scripting
+3. Rainbow Tables
+4. Files on the server
+5. 10
+7. HTTP being a stateless protocol means that it has no way of preserving the connection in a certain state, that is, after a certain request and response are sent, there is no way of remembering that same request-response pair.

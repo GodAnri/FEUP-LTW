@@ -1,0 +1,32 @@
+1. a)
+R1: (0,0,0,2)
+R2: (0,0,0,2)
+R3: (0,0,2,1)
+R4: (0,0,0,2)
+R5: (0,1,0,1)
+R6: (0,0,1,0)
+
+b)
+Title: inherit
+1st Par: green
+2nd Par: blue
+Footer: green
+
+c)
+Title: cyan
+1st Par: green
+2nd Par: yellow
+Footer: green
+
+2. a)
+Peter Piper [picked a peck of pick]led peppers.
+b)
+Peter Piper p[ick]ed a peck of pickled peppers.
+c)
+Peter Piper [picked a peck of pick]led peppers.
+d)
+Peter Piper picked a pe[ck ]of pickled peppers.
+e)
+Peter Piper picked a peck of [pick]led peppers.
+f)
+Peter Piper picked a peck of pickled pep[per]s.
