@@ -34,10 +34,10 @@ Washing the [washing machine while watching the washing machine washing wa]shing
 3. See 3.js
 
 4. a)
-authors/author/book/text()
+//book/text()
 b)
-authors/author/book[@year > '1900']/text()
+//book[@year>1900]/text()
 c)
-authors/author[@country = 'England']/book/@year
+//author[@country="England"]/book/@year
 d)
-authors/author/book[@type = 'Novel']/../@name
+//author[book[@type="Novel"]]/@name
