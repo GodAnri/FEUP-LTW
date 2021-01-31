@@ -1,0 +1,4 @@
+29. //recipe/name/text()
+30. //recipe[@difficulty = "medium"]/name/text()
+31. //recipe[description]/@difficulty
+32. //recipe[count(ingredients/ingredient) > 3]/name/text()
