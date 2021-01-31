@@ -8,8 +8,8 @@ R6: (0,0,0,1)
 
 b)
 Title: blue
-1st Par: inherit
-2nd Par: inherit
+1st Par: blue
+2nd Par: blue
 Footer: red
 
 c)

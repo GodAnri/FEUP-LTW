@@ -8,13 +8,13 @@ R6: (0,0,1,0)
 
 b)
 Title: inherit
-1st Par: green
+1st Par: blue
 2nd Par: blue
 Footer: green
 
 c)
 Title: cyan
-1st Par: green
+1st Par: blue
 2nd Par: yellow
 Footer: green
 
@@ -25,7 +25,7 @@ Peter Piper p[ick]ed a peck of pickled peppers.
 c)
 Peter Piper [picked a peck of pick]led peppers.
 d)
-Peter Piper picked a pe[ck ]of pickled peppers.
+Peter Piper picked a pe[ck] of pickled peppers.
 e)
 Peter Piper picked a peck of [pick]led peppers.
 f)
