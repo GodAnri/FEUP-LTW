@@ -1,4 +1,4 @@
-29. recipes/recipe/ingredients/ingredient/text()
-30. count(recipes/recipe[name = 'Mixed Toast']/ingredients/ingredient)
-31. count(recipes/recipe[@difficulty = 'medium'])
-32. recipes/recipe/ingredients[ingredient = 'Apple']/../text()
+29. //ingredient/text()
+30. count(//recipe[name = 'Mixed Toast']/ingredients/ingredient)
+31. count(//recipe[@difficulty = 'medium'])
+32. //recipe[ingredients/ingredient/text() = 'Apple']/name/text()
